@@ -79,7 +79,7 @@ php artisan serve
 
 Now point your browser to [localhost:8000/list](http://localhost:8000/list) to see the webshop application.
 
-That's it!
+That's it!!!
 
 
 [Laravel Documentation]: https://laravel.com/docs/5.3/installation
