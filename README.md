@@ -71,14 +71,18 @@ Next thing you need to do is set an application key
 php artisan key:generate
 ```
 
-### 5. Update the Aimeos installation
+### 5. Edit your MySQL my.ini file and update the Aimeos installation
 
-In the last step you must now execute these artisan commands to get a working or updated Aimeos installation:
+Open C:\ProgramData\MySQL\MySQL Server 5.7\my.ini with notepad run as Administrator. (This is a hidden folder).
+
+Edit the sort_buffer_size and set it to a higher value (ex. 4M).
+
+Now execute these artisan commands to get a working or updated Aimeos installation:
 
 ```
 php artisan vendor:publish
 php artisan migrate
-php artisan aimeos:setup --option=/default/demo:1
+php artisan aimeos:setup --option=setup/default/demo:1
 php artisan aimeos:cache
 ```
 
