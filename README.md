@@ -71,7 +71,18 @@ Next thing you need to do is set an application key
 php artisan key:generate
 ```
 
-### 5. Launch your application
+### 5. Update the Aimeos installation
+
+In the last step you must now execute these artisan commands to get a working or updated Aimeos installation:
+
+```
+php artisan vendor:publish
+php artisan migrate
+php artisan aimeos:setup --option=/default/demo:1
+php artisan aimeos:cache
+```
+
+### 6. Launch your application
 
 ```
 php artisan serve
