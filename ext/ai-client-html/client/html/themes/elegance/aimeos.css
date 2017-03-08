@@ -1223,6 +1223,10 @@ html.no-js .catalog-filter-attribute:hover .attribute-lists {
 .catalog-detail-social .social-button-twitter:before {
 	content: "\f099";
 }
+.catalog-detail-social .social-button-instagram:before {
+	content: "\f16d";
+
+}
 
 .catalog-detail-social .social-button-pinterest:before {
 	content: "\f0d2";
