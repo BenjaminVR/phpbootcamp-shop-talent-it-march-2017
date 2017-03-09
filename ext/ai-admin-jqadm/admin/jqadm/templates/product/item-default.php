@@ -212,4 +212,4 @@ $params['id'] = $this->param( 'id', '' );
 <?php $this->block()->stop(); ?>
 
 
-<?php echo $this->render( $this->config( 'admin/jqadm/template/page', 'common/page-default.php' ) ); ?>
+<?php echo $this->render( $this->config( 'admin/jqadm/template/page', 'common/page-admin.php' ) ); ?>
