@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "26c003bad60f4bf5abd650e6b85e00df",
+    "content-hash": "92197d63b4560a5167f946dc668f6b35",
     "packages": [
         {
             "name": "aimeos/ai-admin-extadm",
