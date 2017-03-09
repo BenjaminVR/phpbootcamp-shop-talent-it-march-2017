@@ -79,6 +79,30 @@ php artisan serve
 
 Now point your browser to [localhost:8000/list](http://localhost:8000/list) to see the webshop application.
 
+### 6. How to install Stripe payment method.
+
+```
+composer require symfony/event-dispatcher:^2.8
+composer require omnipay/stripe
+php artisan aimeos:account --admin <e-mail>
+	choose password
+```
+
+Browse to: [localhost:8000/admin](http://localhost:8000/admin)
+	- Log in with your admin credentials.
+	- Click on expert mode in the menu.
+	- Go to the service tab.
+	- Click the add button.
+	- Set the data for your new payment type (make sure to set price as well).
+		Optional:
+			Add text
+			Add image
+	- Click save button.
+
+Go to your project folder.: ../vendor/Omnipay/Stripe/src/gateway.php
+	- Complete function 'getDefaultParameters()'.
+		Enter your stripe API-key inside the empty string provided in the array (test API-key = sk_test_BQokikJOvBiI2HlWgH4olfQ2)
+		More information about the API can be found at 'https://stripe.com/docs/api'.
 
 [Laravel Documentation]: https://laravel.com/docs/5.3/installation
 [Aimeos Documentation]: https://github.com/aimeos/aimeos-laravel#aimeos-laravel-package
